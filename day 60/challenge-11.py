@@ -5,4 +5,4 @@ def palindrome(name):
         print("palindrome")
     else:
         print("not a palindrome")
-palindrome("navya")  
+palindrome("sunithasailu")  
