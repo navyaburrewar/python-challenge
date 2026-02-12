@@ -9,4 +9,4 @@ def counting_vowels(name):
     return count
      
 
-print(counting_vowels("navyaburrewar"))     
+print(counting_vowels("sunitheburrewar"))     
