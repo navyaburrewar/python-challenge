@@ -1,7 +1,5 @@
-## Create a greeting functod ion with default username.
+##Write a function with default tax rate.
 
-def function (username="guest"):
-    print("hello",username)
- 
-function()
-function("navya")
+def tax_rate(rate=3003):
+    return rate
+print(tax_rate())
