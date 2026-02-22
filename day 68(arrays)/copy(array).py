@@ -10,3 +10,8 @@ arr2=arr1.view()
 arr1[1]=3
 print(arr1)
 print(arr2)
+
+
+##3 about which only changes the address and also which changes the value of both arr1 and arr2
+## about on eis the shallow copy
+
