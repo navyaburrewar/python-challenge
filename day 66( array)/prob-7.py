@@ -14,7 +14,7 @@ print(arr)
 
 
 ## here which convert the one form to anotherform 
-# which will change and accesing multiple inputs b                
+# which will change and accesing multiple inputs                 
 # but converting them into the one type
 
 
