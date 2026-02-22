@@ -10,3 +10,5 @@ print(arr)
 
 arr =logspace(1,20,5)
 print('%.2f' %arr[4])
+
+
