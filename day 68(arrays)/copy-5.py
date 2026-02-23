@@ -13,6 +13,5 @@ print(id(arr1))
 print(id(arr2))    
 
 
-
 ### here about the the modification is done only in the arr1 which called deep copy
 
