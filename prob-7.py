@@ -1,8 +1,8 @@
 ## Create a function decorator that uses *args and **kwargs to wrap another function
 
 def funct(adding) :
-    def inner(*args,**kwargs):
-      result = adding(*args,**kwargs)
+    def inner(*neha,**akhi):
+      result = adding(*neha,**akhi)
       return result
     return inner
 
