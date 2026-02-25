@@ -2,7 +2,7 @@
 
 
 def name(*marks):
-    return sum(marks)/2
+    return sum(marks)/len(marks)
 
 print(name(20,30,40,10))
 
