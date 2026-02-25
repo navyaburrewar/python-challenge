@@ -16,3 +16,4 @@ for i in arr:
 
 print("max:", max_val)
 print("min :",min_val)      
+
