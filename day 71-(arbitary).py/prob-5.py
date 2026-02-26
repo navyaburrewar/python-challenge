@@ -5,3 +5,4 @@ def func(**names):
 
 print(func(a=10,b=30))
 
+## no of arguments asked
