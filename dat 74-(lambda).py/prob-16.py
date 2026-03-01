@@ -6,3 +6,5 @@ from functools import reduce
 num =[2,3,4,5,6,91,9]
 max = reduce(lambda a,b :a if a>b else b,num)
 print(max)
+
+#reduce() keeps comparing two numbers at a time and carries forward the larger one until only one value (the maximum) remains
