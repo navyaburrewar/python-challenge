@@ -3,11 +3,9 @@
 def count(m):
     if m<10 and m>-10:
         return 1
-    return 1+sum(m)
+    return 1+ count(m//10)
      
 print(count(304))
 
         
-    
-    
     
