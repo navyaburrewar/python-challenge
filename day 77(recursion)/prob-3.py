@@ -6,4 +6,4 @@ def gcd(m,n):
         return m
     else :
         return gcd(n, m%n)
-print(gcd(2,43))    
+print(gcd(3,43))    
