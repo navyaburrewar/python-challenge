@@ -7,3 +7,8 @@ def sen__1(sentence):
 
 for word in sen__1("she is a good girl"):
     print(word)        
+
+
+
+
+    
