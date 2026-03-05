@@ -4,6 +4,8 @@ import numpy
 print(numpy.__version__)
 
 
+###  that about code is for checking the that where which version of numpy is installe
+
 
 from numpy import *
 

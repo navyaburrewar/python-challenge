@@ -1,12 +1,12 @@
 ## accessing index of element using the genereal method
-from array import*
 
-arr=array('i',[2,6,9,5])
+from array import *
+arr =array('i', [1,2,3,4,5,6])
 k=0
 
-n=int(input())
-
+n =int(input())
 for value in arr:
-    if  value==n:
+    if value==n:
         print(k)
-    k+=1    
+    k+=1
+

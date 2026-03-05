@@ -8,9 +8,9 @@ def flattend(m):
     for i in m:
         if isinstance(i,list):
            yield from flattend(i)
-        else:   c
+        else:   
        
-           yield i
+         yield i
 
 for num in flattend([1,[5,7],[8,5,6]])  :
      print(num)       
