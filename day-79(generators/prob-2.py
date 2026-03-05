@@ -8,7 +8,7 @@ def flattend(m):
     for i in m:
         if isinstance(i,list):
            yield from flattend(i)
-        else:   
+        else:   c
        
            yield i
 
