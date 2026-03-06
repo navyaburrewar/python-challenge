@@ -20,5 +20,4 @@ for key, value in count.items():
 
 
 
-         ## lst = user input, print non repeating numbers from the given list [10, 20,16, 23, 12, 25, 16, 16, 10, 20]--23,12,25  
-         #  
+       
