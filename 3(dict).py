@@ -39,16 +39,5 @@ for key ,value in count.items():
 
 
 
-#  From a list, find the element that appears the most times.
 
 
-list =[1,2,3,4,5,6,6,62,1,0]
-
-count={}
-
-for num in list:
-    if num in count:
-        count[num]+1
-    else:
-        count[num]=1
-            
