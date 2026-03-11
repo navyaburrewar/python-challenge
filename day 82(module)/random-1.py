@@ -6,5 +6,3 @@
 
 ## just we have to import it
 ## using "import random"
-# 
-#  
