@@ -21,4 +21,4 @@ n = int(input("Enter range: "))
 for i in range(1, n + 1):
     if prime(i):
         print(i)
-        print(i)
+         
