@@ -1,9 +1,8 @@
-## Write a recursive function to find the greatest common divisor (GCD) of two numbers.
+## if you want the day name
 
 
-def gcd(m,n):
-    if n==0:
-        return m
-    else :
-        return gcd(n, m%n)
-print(gcd(20,3))    
+import datetime 
+
+d=datetime.date(2004,9,21)
+print(d.strftime('%A'))
+print(d.strftime('%a'))
