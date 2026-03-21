@@ -28,4 +28,5 @@
 # for i in range(len(sys.argv)):
 #     print(f"argument {i}:{sys.argv[i]}")
     
+##3 there are 3 ways
 
