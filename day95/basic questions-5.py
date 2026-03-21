@@ -82,3 +82,7 @@
 
 # 20. Is sys.argv mutable (can it be changed)?
 # → Yes (it’s a list)
+
+
+#  20. Is sys.argv mutable (can it be changed)?
+# # → Yes (it’s a list)
