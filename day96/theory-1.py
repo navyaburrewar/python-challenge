@@ -82,3 +82,22 @@
 
 # 0
 # 1
+
+
+
+
+## exit() and sys.exit()
+
+
+# | `exit()`                      | `sys.exit()`      |
+# | ----------------------------- | ----------------- |
+# | For interactive shell         | For real programs |
+# | Not recommended in production | Recommended       |
+
+
+
+# 🧠 Quick Memory Trick
+
+# break → loop ends
+# return → function ends
+# sys.exit → program ends
