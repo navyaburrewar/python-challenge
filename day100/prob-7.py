@@ -9,3 +9,7 @@ print(number)
 import sys
 number =sys.stdin.read().split()
 print(number)
+
+import sys
+number =sys.stdin.read().split()
+print(number)
