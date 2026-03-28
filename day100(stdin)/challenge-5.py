@@ -11,11 +11,11 @@
 
 
 import sys
-n=int( sys.stdin.readline())
+n=int( sys.stdin.readline())              ### it will take the number of terms
 
 for i in range(n):
     word=sys.stdin.readline().strip()
-    print(word.upper())
+    print(word.upper())                   ## it will take the values
 
 
 
