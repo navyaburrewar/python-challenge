@@ -9,5 +9,5 @@
 
 ## parse json to dictionary
 
-# In Python, a JSON string can be converted into a dictionary using the built-in json module using json.loads().
+# In Python, a JSON string can be converted into a dictionary using the built-in json module using json.loads().>>>
 
