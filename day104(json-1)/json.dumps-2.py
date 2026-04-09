@@ -25,6 +25,8 @@ print(json.dumps(False))
 print(json.dumps(None))
 
 
+
+
 ## prob-2
 
 import json
@@ -42,8 +44,42 @@ x = {
   ]
 }
 
-# convert into JSON:
-y = json.dumps(x)
 
-# the result is a JSON string:
-print(y)
+
+print(json.dumps(x, indent=4))
+
+
+### a small explanation for the about code that 
+
+## rules for the indentation it was taking here
+
+## Rule 1: Each key goes to a new line
+##      "name": "John",
+#        "age": 30,
+## rule-2 : Nested data gets extra indentation
+#      "cars": [
+#     {
+#         "model": "BMW 230",
+#         "mpg": 27.5
+#     }
+# ]
+#        cars → 4 spaces
+#        inside {} → 8 spaces
+
+#  Rule 3: Lists (arrays) also break into lines
+#   "children": [
+#     "Ann",
+#     "Billy"
+# ]
+#   Each item gets its own line
+
+
+
+# | Python            | JSON              |
+# | ----------------- | ----------------- |
+# | `True`            | `true`            |
+# | `False`           | `false`           |
+# | `None`            | `null`            |
+# | `("Ann","Billy")` | `["Ann","Billy"]` |
+
+#  Your tuple becomes a list in JSON
