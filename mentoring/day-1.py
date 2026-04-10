@@ -12,3 +12,6 @@ def div(m):
 m=int(input())
 for j in div(m):
     print(j)
+
+
+
