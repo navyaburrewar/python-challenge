@@ -8,9 +8,9 @@ def decorator(func):
 
 @decorator
 
-def func():
+def my_func():
    
-   return int(input())  
+   return 3
     
-func()
+my_func()
 
