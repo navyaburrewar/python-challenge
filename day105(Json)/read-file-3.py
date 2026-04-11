@@ -12,7 +12,7 @@ with open("birth.json", "w") as f:
 
 
 
-##  which is here  
+##  which is here  reads the data from json file on the screen
 
 import json
 
