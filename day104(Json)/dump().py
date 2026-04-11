@@ -33,10 +33,10 @@
 
 import json
 
-with open("data.json", "r") as f:
-    data = json.load(f)
+data = {"name": "john", "age": 20}
 
-print(data)
+with open("data.json", "w") as f:
+    json.dump(data, f)
 
 
 ## atomatically a file is created here 
