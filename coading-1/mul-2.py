@@ -1,4 +1,4 @@
 z=20
 v=30
-product =z*v
+product =z/v
 print(product)
