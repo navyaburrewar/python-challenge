@@ -1,4 +1,4 @@
-age = 39090
-marks =2909
+age = 3909008
+marks =290900
 print(age)
 print(marks)
