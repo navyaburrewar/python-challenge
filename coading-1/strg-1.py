@@ -1,0 +1,2 @@
+name ="choti"
+print(name)
