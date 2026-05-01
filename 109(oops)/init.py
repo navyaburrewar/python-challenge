@@ -18,70 +18,46 @@
 #     pass
 # p1=person()
 # p1.name="navya"
-# p2.age=20
+# p1.age=20
+# print(p1.name)
+# print(p1.age)
 
-## single inheritance 
 
-# class parent:
-#     def aa(self):
-#         print("elders")
+# ##3 using __init__()
 
-# class child(parent):
-#     def bb(self):
-#         print("childern")  
-
-# c1=parent()
-# c2=child()
-# c1.aa()
-# c2.bb()
+# class person:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# p1=person("navya",20)
+# print(p1.name)
+# print(p1.age)        
 
 
 
-##3 multiple inheritance
-
-class grandparent:
-    def aa(self):
-        print("thatha")
-class dad:
-    def bb(self):
-        print("nana")
-
-class child(grandparent,dad):
-    def cc(self):
-        print("kids")
-
-A1= child()
-A1.bb()
-A1.cc()     
+### default values
+class student:
+  def __init__(self,name,roll=20):
+    self.name =name
+    self.roll=roll
+p1=student("navya")
+p2=student("choti",21)
+print(p1.name,p1.roll)
+print(p2.name,p2.roll)           
 
 
-# ### multilevel inheritance
-# class grandfather:
-#     def zz(self):
-#         print("older")
-# class parent(grandfather):
-#     def aa(self):
-#         print("elders")
+### multiple parameters
 
-# class child(parent):
-#     def bb(self):
-#         print("childern") 
+class student :
+  def  __init__(self,name,rollno,rank,section):
+    self.name=name
+    self.rollno=rollno
+    self.rank=rank
+    self.section=section
 
-# A1=child()
-# A1.aa()        
+A1=student("nikki",6615,10,"A") 
+A2=student("CHOTI",6616,11,"A")    
+A3=student("nandhu",6611,12,"A")    
+A4=student("sai",6612,9,"A")    
+print(A1.name,A1.rollno,A1.rank,A1.section)
 
-
-
-# ### hierachical inheritance
-
-# class father:
-#     def men(self):
-#         print("piller of home")
-# class daughter(father):
-#     def girl(self):
-#         print("cute girl") 
-# class son (father):
-#     def boy(self):
-#         print("cute boy")
-# A1=son()
-# A1.men()          
