@@ -16,6 +16,7 @@ p1=student("navya","20")
 p1.student1()
 
 
+
 ##ex-2  ### same as about using f'string formate
 class student:
     def __init__(self,name,age):
@@ -29,3 +30,32 @@ p1=student("navya",20)
 p1.student1()
 
 
+
+# self Does Not Have to Be Named "self"
+# It does not have to be named self, you can call it whatever you like, but it has to be the first parameter of any method in the class:
+class Person:
+  def __init__(myobject, name, age):
+    myobject.name = name
+    myobject.age = age
+
+  def greet(abc):
+    print("Hello, my name is " + abc.name)
+
+p1 = Person("Emil", 36)
+p1.greet()
+
+
+
+#  Calling Methods with self
+# You can also call other methods within the class using self:
+
+class person:
+    def __init__(self,name):
+      self.name=name
+    def greet(self):
+       return "helo"+ self.name
+    def welcome(self):
+       print(self.greet()+"welcome to collage")
+
+p1 = person("navya")
+p1.welcome()         
