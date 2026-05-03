@@ -61,3 +61,9 @@ A3=student("nandhu",6611,12,"A")
 A4=student("sai",6612,9,"A")    
 print(A1.name,A1.rollno,A1.rank,A1.section)
 
+
+
+
+## important###################################
+
+# “__init__ is used to initialize an object when it is created. It allows us to assign properties (attributes) to the object at the time of creation.”
