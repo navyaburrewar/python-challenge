@@ -8,12 +8,10 @@
 # p1.age → asking: “What’s your age?”
 
 # But:
-
 # print(p1) → asking:
 # 👉 “Introduce yourself properly”
 
 # And __str__ decides that introduction:
-
 # “Hi, I’m Tobias (36)”
 
 ### string method
