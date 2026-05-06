@@ -17,3 +17,21 @@ print(p1.prog_lang,p1.name)
 
 # # make a class animal - contain a method with print("animal is shouting"), make 2 child classes
 # #dog - method with print "bow"& cat - method with print "meow"
+
+
+class animal:
+    def sound(self):
+        print("animal is shouting")
+class dog(animal):
+    def aa(self):
+        print('bow')
+class cat(animal):
+    def bb(self):
+        print("meow")
+
+c1=dog()
+c1.sound()
+c2=cat()
+c2.sound()
+
+
