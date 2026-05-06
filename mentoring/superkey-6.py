@@ -1,0 +1,19 @@
+#initialise a parent class as Employee-constructor with parameter name, child class as Developer - constructor with parameter prog_lang, use super()
+# to get 2 parameter data
+
+class Employee:
+    def __init__(self,name):
+        self.name=name
+class Developer(Employee):
+    def __init__(self,prog_lang,name) :
+        super().__init__(name)
+        self.prog_lang=prog_lang
+
+p1=Developer("navya","python")  
+print(p1.prog_lang,p1.name)
+     
+
+
+
+# # make a class animal - contain a method with print("animal is shouting"), make 2 child classes
+# #dog - method with print "bow"& cat - method with print "meow"
