@@ -5,12 +5,14 @@ class Employee:
     def __init__(self,name):
         self.name=name
 class Developer(Employee):
-    def __init__(self,prog_lang,name) :
+    def __init__(self,name) :
+        
         super().__init__(name)
-        self.prog_lang=prog_lang
+        print("my name is ",self.name)
+        # self.prog_lang=prog_lang
 
-p1=Developer("navya","python")  
-print(p1.prog_lang,p1.name)
+p1=Developer("navya")  
+print(p1.name)
      
 
 
