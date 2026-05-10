@@ -5,4 +5,5 @@ class cat:
     def legs (self):
         print("having 4 legs") 
 p1=cat()
-p1.legs()        
+p1.legs()   
+     

@@ -56,16 +56,16 @@
 
 # ### hierachical inheritance            ## one parent two children
 
-class father:
-    def men(self):
-        print("piller of home")
-class daughter(father):
-    def girl(self):
-        print("cute girl") 
-class son (father):
-    def boy(self):
-        print("cute boy")
-A1=son()
-A1.men()       
-b1=daughter()
-b1.men()
+# class father:
+#     def men(self):
+#         print("piller of home")
+# class daughter(father):
+#     def girl(self):
+#         print("cute girl") 
+# class son (father):
+#     def boy(self):
+#         print("cute boy")
+# A1=son()
+# A1.men()       
+# b1=daughter()
+# b1.men()
