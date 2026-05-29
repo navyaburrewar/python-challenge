@@ -8,7 +8,7 @@ b=[[1,2],
 
 result=[]
 for i in range(len(a)):          # here len(a) is an row                                   
-    row=[0]*len(b[0])            # here len(b[0])  is no of colums --> instill get confude refer matrix-1.py
+    row=[0]*len(b[0])            # here len(b[0])  is no of colums -->  if confuse refer matrix-1.py
     for j in range(len(b[0])):      
         for k in range(len(b)):
             row[j]+=a[i][k]*b[k][j]
