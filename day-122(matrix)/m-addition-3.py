@@ -38,7 +38,7 @@ result=[[0,0,0],
 
 row=3
 col=3
-for i in range(row):
-    for j in range(col):
+for i in range(row):  # 0,1,2
+    for j in range(col):  #0,1,2
         result[i][j]=m1[i][j]+m2[i][j]
 print(result)        
