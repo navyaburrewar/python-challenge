@@ -83,4 +83,3 @@ def breakingRecords(scores):
     return (breaking_h, breaking_l)   
 print(breakingRecords([2,4,6,5,1]))
 
-
