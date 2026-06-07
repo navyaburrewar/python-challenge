@@ -4,7 +4,7 @@
 # target=6
 
 def floor(arr,target):
-    low=1
+    low=0
     high=len(arr)-1
     ans=-1
     while low<=high:
