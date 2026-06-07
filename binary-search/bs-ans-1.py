@@ -118,7 +118,7 @@ def aggressive_cows(stalls, k):
     return answer
 
 
-stalls = [1,2,4,8,9]
+stalls = [1,2,4,8,9,7]
 k = 3
 
 print(aggressive_cows(stalls, k))
