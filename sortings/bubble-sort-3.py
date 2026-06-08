@@ -23,7 +23,7 @@ Repeat until sorted.
 
 def bubble_sort(arr):
     for i in range(len(arr)):
-        for j in range(0,len(arr)-i-1):
+        for j in range(0,len(arr)-i-1):   ## here -1 will removes the soted last element index
             if arr[j]>arr[j+1]:
                 arr[j],arr[j+1]=arr[j+1],arr[j]
 
