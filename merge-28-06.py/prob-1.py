@@ -4,16 +4,12 @@ def merge_sort(arr):
     r=n-1
     if n>1:
         mid=(l+r)//2
-        
-        left =arr[:mid+1]
+        left=arr[:mid+1]
         right=arr[mid+1:]
-       
         merge_sort(left)
         merge_sort(right)
- 
         i=j=k=0
-        result=[0]*n
-        while i<len(left) and j <len(right):
+        while i<len(left) and j<len(right):
             if left[i]<right[j]:
                 arr[k]=left[i]
                 i+=1
@@ -29,12 +25,14 @@ def merge_sort(arr):
             arr[k]=right[j]
             j+=1
             k+=1
-
         return arr
 
-a=[8,6,4,9,1,2]
-print(merge_sort(a))
+print(merge_sort([5,4,3,2,1]))        
 
 
-     
+
+
+
+
+    
     
