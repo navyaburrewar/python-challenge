@@ -9,9 +9,16 @@ def quick_sort(arr):
     if n<=1:
         return arr
     pivot=arr[mid]
+    count=0
     left=[x for x in arr if x<pivot]
     middle=[x for x in arr if x==pivot]
     right=[x for x in arr if x>pivot]
+    
+    
     return quick_sort(left)+middle+quick_sort(right)
-print(quick_sort([3,1,4,2,7,1]))
+    
+    
+    
+print(quick_sort([3,1,4,2,7,1],))
+
 
