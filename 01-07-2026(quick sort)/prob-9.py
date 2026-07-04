@@ -1,3 +1,5 @@
+# quick-sort in -place algorithum
+
 def partition(arr, low, high):
     pivot = arr[high]      # Choose the last element as pivot
     i = low - 1            # i keeps track of the last position of an element <= pivot
