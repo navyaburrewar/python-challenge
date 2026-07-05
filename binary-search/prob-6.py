@@ -18,4 +18,4 @@ def upper_bound(arr,target):
             low=mid+1
     return ans
 
-print(upper_bound([1,2,3,4,5,6],5))        
+print(upper_bound([1,2,3,4,6,7,5]))        
