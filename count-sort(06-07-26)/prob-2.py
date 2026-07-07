@@ -20,8 +20,13 @@ def counting_sort(arr):
             arr[j]=i
             j+=1
             count[i]-=1
-+
+
     return arr
 a=[4, 2, 2, 8, 3, 3, 1]
 print(counting_sort(a))            
 
+# Index
+# 0 1 2 3 4 5 6 7 8
+
+# Count
+# 0 1 2 2 1 0 0 0 1
