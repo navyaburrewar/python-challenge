@@ -22,7 +22,15 @@ def count_sort(arr):
 arr=[2,4,6,3,9,2]
 print(count_sort(arr))
 
-        
+## finding max -->0(n)
+## creating -->0(k)
+## counting element-->0(n)
+# rebuilding array --->0(n+k)
+
+## over all
+# 0(n+k)
+#  Time Complexity: O(n + k)
+# Space Complexity: O(k)
 
 
 
