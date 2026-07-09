@@ -15,15 +15,14 @@
 def count_sort(arr):
     max_value=max(arr)
 
-    count=[0]*(max_value+1)
-
-    for num in arr:
+    count=[0]*(max_value+1)           #[0,1,2,3,4,5,6,7,8]
+    for num in arr:                   
         count[num]+=1
-    print("Frequency array",count)    
+    print("Frequency array",count)     #[0,1,2,2,1,0,0,0,1]
 
     for i in range(1,len(count)):
         count[i]+=count[i-1]
-    print("cumulative count array::",count)
+    print("cumulative count array::",count)  #[0,1,3,5,6,6,6,7]
 
     output=[0]*len(arr)
 
