@@ -5,3 +5,6 @@ class Node:
 n1=Node(10)
 print(n1)
 print(n1.add)
+
+
+

@@ -29,3 +29,18 @@
 # circular linked list
 # last node connected to the first
 
+
+# double circle list
+# 
+
+#              --->
+    #  [n2,10,n2]---->[n1,10,n2]
+                # <-----  
+
+
+#  it is collection of nodes
+#     node is the combination of data and address
+# this combination of node is called as a linked list
+#  
+
+
