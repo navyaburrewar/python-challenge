@@ -69,3 +69,4 @@ n1.add.add.add=n4
 
 print(n3)
 print(n1.add.add)
+print(n1.add.add.add.data)
