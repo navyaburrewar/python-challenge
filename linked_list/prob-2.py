@@ -70,3 +70,11 @@ n1.add.add.add=n4
 print(n3)
 print(n1.add.add)
 print(n1.add.add.add.data)
+
+
+
+queue = [10, 20, 30]
+
+queue.pop(0)      # removes the first element
+
+print(queue)
