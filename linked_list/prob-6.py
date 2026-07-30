@@ -27,12 +27,30 @@ class SLL:
                 print(temp.data,end="-->")  
                 temp=temp.Next
             print("temp getout from the train")             
-            
+    def add_begin(self,num):
+        new=Node(num)
+        if self.head is None:
+            self.head=new
+        else:
+            new.next=self.head
+            self.head=new   
+    def delete_end(self):
+        if self.head==None:
+            print("empty")
+        elif self.head.Next==None:
+            self.head=None
+        else:
+            temp=self.head
+            while temp.Next.Next is not None:
+                temp=temp.Next   
+            temp.Next=None                         
+
+
 
 T=SLL()
+T.add_begin(200)
 T.add_end(10)
 T.add_end(20)
 T.add_end(30)
-T.psll()
-T.add_end(40)
+T.delete_end()
 T.psll()
