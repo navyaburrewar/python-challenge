@@ -81,7 +81,17 @@ class SLL:
                 tc.Next=temp.Next
                 temp.Next=None
                 del(temp)
-
+    def reverse(self):
+            if self.head==None:
+                print("cannot do")
+            else:
+                last=None
+                while self.head is not None:
+                    prev=self.head.next
+                    self.head.next=last
+                    last=self.head
+                    self.head=prev
+                self.head=last    
                         
 
 
@@ -101,36 +111,39 @@ T.psll()
 
 
 
+
+
+
 ##Variable sliding window ---------
 # nums = [2,3,1,2,4,3]
 
 
-def longest_subarr(nums, k):
+# def longest_subarr(nums, k):
 
-    left =0
+#     left =0
     
-    max_len = 0
-    total=0
+#     max_len = 0
+#     total=0
 
-    for right in range(len(nums)):
-        total += nums[right]
-        #print(total)
+#     for right in range(len(nums)):
+#         total += nums[right]
+#         #print(total)
 
-        while total>k:
-            total-=nums[left]
+#         while total>k:
+#             total-=nums[left]
 
-            left+=1
-            #best subarray
-            if right-left+1 > max_len:
-                max_len = right-left+1
+#             left+=1
+#             #best subarray
+#             if right-left+1 > max_len:
+#                 max_len = right-left+1
 
-                st = left
-                en = right
+#                 st = left
+#                 en = right
 
-    return nums[st:en+1], max_len
+#     return nums[st:en+1], max_len
                 
     
 
-arr = [2,3,1,2,4,3]
-n=7
-print(longest_subarr(arr,n))
+# arr = [2,3,1,2,4,3]
+# n=7
+# print(longest_subarr(arr,n))
