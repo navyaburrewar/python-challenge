@@ -44,6 +44,19 @@ class SLL:
             while temp.Next.Next is not None:
                 temp=temp.Next   
             temp.Next=None                         
+    def insert(self,data,pos):
+        new=Node(data)
+        if self.head is None or pos==0:
+            self.head=new
+        else:
+            c=0
+            temp=self.head
+            pos=pos-1
+            while pos!=c and temp.Next!=None:
+                temp=temp.Next
+                c+=1
+            new.Next=temp.Next
+            temp.Next=new    
 
 
 
@@ -53,4 +66,43 @@ T.add_end(10)
 T.add_end(20)
 T.add_end(30)
 T.delete_end()
+T.insert(80,5)
+T.insert(90,2)
 T.psll()
+
+
+
+
+##Variable sliding window ---------
+# nums = [2,3,1,2,4,3]
+
+
+def longest_subarr(nums, k):
+
+    left =0
+    
+    max_len = 0
+    total=0
+
+    for right in range(len(nums)):
+        total += nums[right]
+        #print(total)
+
+        while total>k:
+            total-=nums[left]
+
+            left+=1
+            #best subarray
+            if right-left+1 > max_len:
+                max_len = right-left+1
+
+                st = left
+                en = right
+
+    return nums[st:en+1], max_len
+                
+    
+
+arr = [2,3,1,2,4,3]
+n=7
+print(longest_subarr(arr,n))
