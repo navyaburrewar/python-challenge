@@ -47,7 +47,8 @@ class SLL:
     def insert(self,data,pos):
         new=Node(data)
         if self.head is None or pos==0:
-            self.head=new
+            new.Next=self.head
+            self.head=new    
         else:
             c=0
             temp=self.head
@@ -56,7 +57,33 @@ class SLL:
                 temp=temp.Next
                 c+=1
             new.Next=temp.Next
-            temp.Next=new    
+            temp.Next=new   
+
+    def delete(self,pos):
+        if self.head is None:
+            print("i cannot delete")
+        elif pos==0:
+            temp=self.head
+            self.head=self.head.Next
+            temp.Next=None
+            del(temp)
+        else:
+            tc=self.head
+            c=0
+            pos=pos-1
+            while tc.Next!=None and c!=pos:
+                tc=tc.Next
+                c+=1
+            if c!=pos:
+                print("pos not found")
+            else:
+                temp=tc.Next
+                tc.Next=temp.Next
+                temp.Next=None
+                del(temp)
+
+                        
+
 
 
 
@@ -66,8 +93,9 @@ T.add_end(10)
 T.add_end(20)
 T.add_end(30)
 T.delete_end()
-T.insert(80,5)
+T.insert(80,0)
 T.insert(90,2)
+T.delete(1)
 T.psll()
 
 
