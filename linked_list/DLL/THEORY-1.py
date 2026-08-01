@@ -107,6 +107,15 @@ class DLL:
             new.next=tc.next
             tc.next=new
             
+    def delete_pos(self,data,pos):
+        if self.head==None:
+            print("we cant delete")
+        elif pos==0:
+            temp=self.head
+            self.head=self.head.next
+            if self.head.next is not None:
+                
+
 
                    
              
