@@ -27,9 +27,28 @@ class SELL:
                 print(temp.data,end="-->")
                 temp=temp.next
             print(temp.data,"-->connects to the first node")
+
+    def add_begin(self,num):
+        new=node(num)
+        if self.head==None:
+            self.head=new
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+
+            temp.next=new
+            new.next=self.head
+            self.head=new
+
+
+                
+            
+
 s=SELL()
 s.add_end(20)
 s.add_end(30)
+s.add_begin(10)
 s.pell()
             
     
