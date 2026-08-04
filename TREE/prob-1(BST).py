@@ -33,6 +33,15 @@ def inorder(node):
 print(inorder(root))
 
 
+def preorder(node):
+    if node is not None:
+        print(node.data,end=" ")
+        preorder(node.left)
+        preorder(node.right)
+
+print(preorder(root))        
+
+
 
 
 
