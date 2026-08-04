@@ -27,13 +27,11 @@
 # 2.pre -order
 # 3.post-order
 
-## basic recursion 
+#========================== basic recursion========================= 
 # 
 def fact(n):
     if n==1:
         return 1
     return n*fact(n-1)
- 
-
 n=5
 print(fact(n))
