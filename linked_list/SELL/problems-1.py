@@ -33,10 +33,47 @@ print(None)
 
 
 
-# prob--2
-## creating a linked list'
 
 
+
+# / print the linked list
+
+
+def printlinkedlist(head):
+    temp=head
+    while temp is not None:
+        print(temp.data,end=" ")
+        temp=temp.next
+
+
+
+
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+
+print(printlinkedlist(head))
+
+
+
+# ✅ Count Nodes
+def printlinkedlist(head):
+    count=0
+    temp=head
+    while temp is not None:
+        print(temp.data,end=" ")
+        count+=1
+        temp=temp.next
+    print(count)
+
+
+
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+
+print(printlinkedlist(head))
 
 
             
