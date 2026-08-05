@@ -43,9 +43,44 @@ print(preorder(root))
 
 
 
+def postorder(node):
+    if node is not None:
+        postorder(node.left)
+        postorder(node.right)
+        print(node.data)
 
 
 
 
 
 
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        dummy = ListNode(0)
+        dummy.next = head
+
+        # First pass: Find the length of the linked list
+        length = 0
+        curr = head
+        while curr:
+            length += 1
+            curr = curr.next
+
+        # Find the node before the one to remove
+        curr = dummy
+        for _ in range(length - n):
+            curr = curr.next
+
+        # Delete the nth node from the end
+        curr.next = curr.next.next
+
+        return dummy.next
+
+
+    
