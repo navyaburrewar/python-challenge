@@ -66,3 +66,18 @@ num=[20,39,58,10,84]
 m=heapq.nsmallest(3,num)
 
 print(m)
+
+
+
+import heapq
+num=list(map(int,input().split()))
+k=int(input())
+
+heap=[]
+for i in num:
+    heapq.heappush(heap,-i)
+
+    if len(heap)>k:
+        heapq.heappop(heap)
+
+print("k th samllest",-heap[0])        
