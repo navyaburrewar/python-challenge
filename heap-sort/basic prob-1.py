@@ -81,3 +81,6 @@ for i in num:
         heapq.heappop(heap)
 
 print("k th samllest",-heap[0])        
+
+
+## all about are heap sort
