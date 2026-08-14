@@ -83,4 +83,4 @@ for i in num:
 print("k th samllest",-heap[0])        
 
 
-## all about are heap sort
+## all about are heap sort examples
