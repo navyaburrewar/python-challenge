@@ -1,7 +1,7 @@
-class student :
-    def __init__(self):
-       print("navya is topper in python")
-c1= student()   
+# class student :
+#     def __init__(self):
+#        print("navya is topper in python")
+# c1= student()   
 
 # i=0
 # while i<5:
